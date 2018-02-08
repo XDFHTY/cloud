@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        #healthCheckPath:健康检查的REST地址
+        #healthCheckInterval：检查的时间间隔
+        #healthCheckPath中的REST借口需要在代码中实现并可以get方式正常访问，否则健康检查的结果将会一直是critical状态，即不可用严重状态
+
+        #healthCheckPath: ${management.contextPath}/health
+        health-check-path: /health
+        healthCheckInterval: 15s
+        instance-id: consul-miya
+  application:
+    name: consul-miya
+server:
+  port: 8502
+
