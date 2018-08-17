@@ -34,16 +34,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-netflix-eureka-server</artifactId>
-			<version>1.4.0.RELEASE</version>
-		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-netflix-eureka-server</artifactId>
 		</dependency>
 	</dependencies>
 
@@ -54,7 +53,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Dalston.RC1</version>
+				<version>Dalston.SR5</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -106,8 +105,6 @@
 			</snapshots>
 		</repository>
 	</repositories>
-
-
 
 
 </project>
