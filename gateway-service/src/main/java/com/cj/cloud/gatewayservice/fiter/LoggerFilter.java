@@ -29,7 +29,7 @@ public class LoggerFilter extends ZuulFilter {
     @Override
     public Object run() {
 
-        tracer.addTag("operator","forezp");
+        tracer.addTag("操作者","forezp");
         System.out.print(tracer.getCurrentSpan().traceIdString());
         return null;
     }

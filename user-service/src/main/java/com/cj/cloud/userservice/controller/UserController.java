@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
 
-    @GetMapping("/hi")
+    @GetMapping("/test")
     public String hi(){
-        return "I'm forezp,来自user-service";
+        return "测试userService";
     }
 }

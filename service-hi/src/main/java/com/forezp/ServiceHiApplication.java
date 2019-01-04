@@ -24,6 +24,8 @@ public class ServiceHiApplication {
 
 	@Value("${server.port}")
 	String port;
+
+
 	@RequestMapping("/hi")
 	@HystrixCommand(fallbackMethod = "hiError")
 	public String home(@RequestParam String name) {

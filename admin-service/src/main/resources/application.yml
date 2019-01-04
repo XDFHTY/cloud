@@ -3,7 +3,7 @@ eureka:
     serviceUrl:
       defaultZone: http://admin:12321@backup:7999/eureka/,http://admin:12321@master:7998/eureka/
 server:
-  port: 8762
+  port: 8761
 spring:
   application:
     name: user-service
